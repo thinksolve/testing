@@ -1,0 +1,13 @@
+/* Resetting the pico-css variables (https://picocss.com/docs/customization.html) otherwise resetting '--primary' in svelte components doesn't change the derived variables  */
+
+* {
+	/* --primary: #1bd8cf; */
+	--primary: rgb(246, 7, 118);
+	/* --primary-hover: rgba(var(--primary), 0.9); */
+	--primary-hover: color-mix(in srgb, var(--primary), transparent 10%);
+	--primary-focus: color-mix(in srgb, var(--primary), transparent 90%);
+	--form-element-focus-color: var(--primary-focus);
+	--form-element-active-border-color: var(--primary);
+	--switch-checked-background-color: var(--primary);
+	--switch-color: var(--primary-inverse);
+}
