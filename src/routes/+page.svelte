@@ -46,7 +46,8 @@
 	</form>
 
 	<!-- #3: Submit with form  -->
-	<form enctype="multipart/form-data" method="POST" action="/post">
+
+	<form enctype="multipart/form-data" method="POST" action="/post/">
 		<input type="file" name="file" id="file" multiple required />
 		<button type="submit" class="outline contrast">(server endpoint)</button>
 		<span>check server logs</span>

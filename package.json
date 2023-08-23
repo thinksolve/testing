@@ -29,5 +29,11 @@
 		"typescript": "^5.1.6",
 		"vite": "^4.4.9"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@googleapis/drive": "^8.2.0",
+		"drive": "link:@types/googleapis/drive",
+		"formidable-serverless": "^1.1.1",
+		"googleapis": "^126.0.0"
+	}
 }
